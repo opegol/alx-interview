@@ -11,6 +11,7 @@ def minOperations(n):
     Args n: Number of characters to be displayed
     Return (integer): minimum number of operations
     """
+
     ops = 0
     current = 1 # current number of Hs in the file
     counter = 0
