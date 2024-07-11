@@ -1,4 +1,13 @@
+#!/usr/bin/python3
+
+""Method to devise a solution that efficiently calculates
+the minimum number of operations to achieve a given number
+of characters using only “Copy All” and “Paste” operations. 
+"""
+
+
 def minOperations(n):
+"""calculates the fewest number of operations needed to result in exactly n H characters"""
     if n <= 1:
         return 0
     
