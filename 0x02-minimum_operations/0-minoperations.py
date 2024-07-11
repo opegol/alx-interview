@@ -16,7 +16,7 @@ def minOperations(n):
     current = 1 # current number of Hs in the file
     counter = 0
     
-    while now < n:
+    while current < n:
         rem = n - current 
         if (rem % current == 0):
             ops = current
