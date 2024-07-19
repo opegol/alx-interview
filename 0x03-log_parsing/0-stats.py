@@ -38,7 +38,7 @@ if __name__ == "__main__":
                         status_code[line_list[-2]] = 1
                     try:
                         file_size += int(line_list[-1])
-                    except (TypeError, ValueError):
+                    except (IndexError, ValueError):
                         pass
                 if count % 10 == 0:
                     print_metrics(file_size, status_code)
