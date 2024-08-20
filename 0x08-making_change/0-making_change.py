@@ -43,15 +43,12 @@ def makeChange(coins, total):
         return 0
 
     else:
-        # coin = sorted(coins)
-        # coin.reverse()
         coins.sort(reverse=True)
         count = 0
         for n in coins:
             while (total >= n):
                 total -= n
                 count += 1
-                # total -= i
         if total == 0:
             return count
         return -1
