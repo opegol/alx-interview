@@ -37,20 +37,21 @@ def makeChange1(coins, total):
 
 
 def makeChange(coins, total):
-    """This function will take a list of coins and use
-       that to calculate how much change the total will require
-    """
+    """Return the fewest number of coins needed to meet total."""
+
     if total <= 0:
         return 0
 
     else:
-        coin = sorted(coins)
-        coin.reverse()
-        counter = 0
-        for i in coin:
-            while(total >= i):
-                counter += 1
-                total -= i
+        # coin = sorted(coins)
+        # coin.reverse()
+        coins.sort(reverse=True)
+        count = 0
+        for n in coins:
+            while (total >= n):
+                total -= n
+                count += 1
+                # total -= i
         if total == 0:
-            return counter
+            return count
         return -1
