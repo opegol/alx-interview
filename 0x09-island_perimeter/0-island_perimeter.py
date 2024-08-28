@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Function calculates the perimeter of an island of square blocks"""
 
 
