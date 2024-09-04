@@ -6,7 +6,7 @@
 def soePrimes(n):
     """Return list of prime numbers between 1 and n inclusive
         using Sieve of Eratosthenes.
-    
+    """
     primeArr = [True] * (n + 1)
     primeArr[0] = primeArr[1] = False
     p = 2
@@ -17,7 +17,7 @@ def soePrimes(n):
         p += 1
     primes = [i for i in range(2, n + 1) if primeArr[i]]
     return primes
-
+    
     """
     primeNos = []
     filtered = [True] * (n + 1)
@@ -27,6 +27,7 @@ def soePrimes(n):
             for i in range(prime, n + 1, prime):
                 filtered[i] = False
     return primeNos
+    """
 
 def isWinner(x, nums):
     """
